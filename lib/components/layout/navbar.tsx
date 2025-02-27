@@ -1,31 +1,19 @@
-// React
-import { useMemo } from 'react'
-
-// i18n
+// Lib
 import { LanguageSelector } from '@i18n'
-
-// Components
-import { Logo, Debug } from '@components'
-
-// Theme
 import { ThemeSwitcher } from '@theme'
+import { Debug } from '@debug'
+import { Logo } from '@components'
 
-export const NavBar = () => {
-  const isDevelopmentEnv = useMemo(() => {
-    return process.env.NODE_ENV === 'development'
-  }, [])
+export const NavBar = () => (
+  <header className='lg:container z-[99]'>
+    <nav className='flex flex-wrap justify-between items-center px-5 gap-5'>
+      <Logo />
 
-  return (
-    <header className='lg:container z-[99]'>
-      <nav className='flex flex-wrap justify-between items-center px-5 gap-5'>
-        <Logo />
+      <Debug />
 
-        {isDevelopmentEnv && <Debug />}
+      <LanguageSelector />
 
-        <LanguageSelector />
-
-        <ThemeSwitcher />
-      </nav>
-    </header>
-  )
-}
+      <ThemeSwitcher />
+    </nav>
+  </header>
+)

@@ -21,7 +21,7 @@ import { ChargesContextProvider } from '@/old-stuff/contexts/ChargesContext'
 import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 // Variables
-import { FORM_DEFAULT_VALUES } from '@/old-stuff/old-lib/variables'
+import { FORM_DEFAULT_VALUES } from '@debug'
 
 type ProvidersProps = {
   children: React.ReactNode

@@ -38,6 +38,9 @@
       "@components": [
         "./lib/components"
       ],
+      "@debug": [
+        "./lib/debug"
+      ],
     }
   },
   "include": [
