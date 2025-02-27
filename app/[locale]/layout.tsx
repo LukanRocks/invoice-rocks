@@ -22,9 +22,6 @@ import { JSONLD, ROOTKEYWORDS } from '@/old-stuff/old-lib/seo'
 // Variables
 import { BASE_URL, GOOGLE_SC_VERIFICATION } from '@/old-stuff/old-lib/variables'
 
-// i18n
-import { LOCALES_AVAILABLE } from '@i18n'
-
 // TODO: Use a share metadata
 export const metadata: Metadata = {
   title: 'Invoify | Free Invoice Generator',
@@ -46,11 +43,6 @@ export const metadata: Metadata = {
   verification: {
     google: GOOGLE_SC_VERIFICATION,
   },
-}
-
-export function generateStaticParams() {
-  const locales = LOCALES_AVAILABLE.map((locale) => locale.code)
-  return locales
 }
 
 type LocaleProps = { children: React.ReactNode; params: { locale: string } }
