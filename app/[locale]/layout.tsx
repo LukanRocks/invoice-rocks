@@ -1,6 +1,3 @@
-// React
-import { useState, useEffect } from 'react'
-
 // Next
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
@@ -10,20 +7,12 @@ import { NavBar, Footer } from '@components'
 
 // ! ----------------
 
-// ShadCn
-import { Toaster } from '@/old-stuff/ui/toaster'
-
 // Contexts
 import Providers from '@/old-stuff/contexts/Providers'
 
-type LocaleProps = { children: React.ReactNode; params: { locale: string } }
+// ! ----------------
 
-export default async ({ children, params }: LocaleProps) => {
-  // const [locale, setLocale] = useState('')
-  // useEffect(()=>{
-
-  // },[])
-
+export default async ({ children, params }: { children: React.ReactNode; params: { locale: string } }) => {
   const { locale } = await params
 
   let messages
@@ -43,8 +32,6 @@ export default async ({ children, params }: LocaleProps) => {
           <div className='flex flex-col'>{children}</div>
 
           <Footer />
-
-          <Toaster />
         </Providers>
       </NextIntlClientProvider>
     </div>
