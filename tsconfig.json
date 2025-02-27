@@ -26,14 +26,17 @@
       "@/*": [
         "./*"
       ],
+      "@i18n": [
+        "./lib/i18n"
+      ],
+      "@seo": [
+        "./lib/seo"
+      ],
       "@theme": [
         "./lib/theme"
       ],
       "@components": [
         "./lib/components"
-      ],
-      "@i18n": [
-        "./lib/i18n"
       ],
     }
   },

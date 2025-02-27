@@ -4,7 +4,7 @@
 import { useTranslationContext } from '@i18n'
 
 // Variables
-import { AUTHOR_GITHUB, AUTHOR_NAME } from '@/old-stuff/old-lib/variables'
+import { AUTHOR_GITHUB, AUTHOR_NAME } from '@seo'
 
 // Mantine
 import { Text } from '@mantine/core'

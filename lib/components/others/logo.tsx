@@ -1,6 +1,3 @@
-// React
-import { useMemo } from 'react'
-
 // Next
 import Link from 'next/link'
 import Image from 'next/image'
@@ -9,7 +6,7 @@ import Image from 'next/image'
 import File from '@/public/img/logo.svg'
 
 // Lib
-import { APP_NAME } from '@/old-stuff/old-lib/variables'
+import { APP_NAME } from '@seo'
 
 export const Logo = () => {
   return (

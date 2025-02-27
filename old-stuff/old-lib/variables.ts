@@ -7,17 +7,6 @@ import { SignatureColor, SignatureFont } from '@/old-stuff/old-lib/types'
 export const ENV = process.env.NODE_ENV
 
 /**
- * Information
- */
-export const APP_NAME = 'Invoice Rocks'
-export const APP_DESCRIPTION = 'An Invoice Generator Web App'
-export const APP_LOGO_URL = 'https://invoify.vercel.app/_next/static/media/invoify-logo.7ef8fa33.svg'
-export const AUTHOR_NAME = 'Lukan Vanderlinde'
-export const AUTHOR_WEBSITE = 'https://lukan.rocks/'
-export const BASE_URL = 'https://invoice.lukan.rocks/'
-export const AUTHOR_GITHUB = 'https://github.com/LukanRocks'
-
-/**
  * API endpoints
  */
 export const GENERATE_PDF_API = '/api/invoice/generate'
@@ -38,11 +27,6 @@ export const CHROMIUM_EXECUTABLE_PATH = 'https://github.com/Sparticuz/chromium/r
  * Tailwind
  */
 export const TAILWIND_CDN = 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
-
-/**
- * Google
- */
-export const GOOGLE_SC_VERIFICATION = process.env.GOOGLE_SC_VERIFICATION
 
 /**
  * Nodemailer

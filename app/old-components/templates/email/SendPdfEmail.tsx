@@ -3,7 +3,7 @@ import { Html, Body, Head, Heading, Hr, Container, Preview, Section, Text, Img }
 import { Tailwind } from '@react-email/tailwind'
 
 // Variables
-import { BASE_URL } from '@/old-stuff/old-lib/variables'
+import { BASE_URL } from '@seo'
 
 type SendPdfEmailProps = {
   invoiceNumber: string
