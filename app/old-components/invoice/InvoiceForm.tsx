@@ -16,7 +16,7 @@ import { Wizard } from 'react-use-wizard'
 import { WizardStep, BillFromSection, BillToSection, InvoiceDetails, Items, PaymentInformation, InvoiceSummary } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/contexts/TranslationContext'
+import { useTranslationContext } from '@/i18n/utils/translation-context'
 
 const InvoiceForm = () => {
   const { _t } = useTranslationContext()

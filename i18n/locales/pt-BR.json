@@ -93,6 +93,9 @@
     "generatePdf": "Gerar PDF",
     "pdfView": "Visualização em PDF"
   },
+  "language": {
+    "nothingFound": "Tradução não encontrada"
+  },
   "footer": {
     "developedBy": "Desenvolvido por"
   }

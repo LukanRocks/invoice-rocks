@@ -1,10 +1,4 @@
 /* =========================
-   * Navigation
-   ========================= */
-import BaseNavbar from './layout/BaseNavbar'
-import BaseFooter from './layout/BaseFooter'
-
-/* =========================
    * Invoice
    ========================= */
 import InvoiceMain from './invoice/InvoiceMain'
@@ -50,8 +44,6 @@ import ChargeInput from './reusables/form-fields/ChargeInput'
 import FormCustomInput from './reusables/form-fields/FormCustomInput'
 
 import BaseButton from './reusables/BaseButton'
-import ThemeSwitcher from './reusables/ThemeSwitcher'
-import LanguageSelector from './reusables/LanguageSelector'
 import Subheading from './reusables/Subheading'
 
 /* =========================
@@ -93,14 +85,7 @@ import InvoiceTemplate2 from './templates/invoice-pdf/InvoiceTemplate2'
 // Email templates
 import SendPdfEmail from './templates/email/SendPdfEmail'
 
-/* =========================
-   ? DEV ONLY
-   ========================= */
-import DevDebug from './dev/DevDebug'
-
 export {
-  BaseNavbar,
-  BaseFooter,
   InvoiceMain,
   InvoiceForm,
   InvoiceActions,
@@ -128,8 +113,6 @@ export {
   ChargeInput,
   FormCustomInput,
   BaseButton,
-  ThemeSwitcher,
-  LanguageSelector,
   Subheading,
   SendPdfToEmailModal,
   InvoiceLoaderModal,
@@ -147,5 +130,4 @@ export {
   InvoiceTemplate1,
   InvoiceTemplate2,
   SendPdfEmail,
-  DevDebug,
 }

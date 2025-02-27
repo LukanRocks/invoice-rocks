@@ -12,7 +12,7 @@ import { ChargeInput } from '@/app/old-components'
 
 // Contexts
 import { useChargesContext } from '@/contexts/ChargesContext'
-import { useTranslationContext } from '@/contexts/TranslationContext'
+import { useTranslationContext } from '@/i18n/utils/translation-context'
 
 // Helpers
 import { formatNumberWithCommas } from '@/lib/helpers'

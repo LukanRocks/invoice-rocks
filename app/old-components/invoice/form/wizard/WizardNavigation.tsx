@@ -7,7 +7,7 @@ import { useWizard } from 'react-use-wizard'
 import { BaseButton } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/contexts/TranslationContext'
+import { useTranslationContext } from '@/i18n/utils/translation-context'
 
 // Icons
 import { ArrowLeft, ArrowRight } from 'lucide-react'

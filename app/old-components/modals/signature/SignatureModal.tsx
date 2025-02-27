@@ -14,7 +14,7 @@ import { Label } from '@/components/ui/label'
 import { DrawSignature, TypeSignature, UploadSignature } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/contexts/TranslationContext'
+import { useTranslationContext } from '@/i18n/utils/translation-context'
 import { useSignatureContext } from '@/contexts/SignatureContext'
 
 // Icons

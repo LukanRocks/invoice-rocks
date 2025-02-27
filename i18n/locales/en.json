@@ -86,6 +86,9 @@
     "generatePdf": "Generate PDF",
     "pdfView": "PDF View"
   },
+  "language": {
+    "nothingFound": "Translation not available"
+  },
   "footer": {
     "developedBy": "Developed by"
   }

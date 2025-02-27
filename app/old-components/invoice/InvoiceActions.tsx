@@ -8,7 +8,7 @@ import { PdfViewer, BaseButton, NewInvoiceAlert, InvoiceLoaderModal, InvoiceExpo
 
 // Contexts
 import { useInvoiceContext } from '@/contexts/InvoiceContext'
-import { useTranslationContext } from '@/contexts/TranslationContext'
+import { useTranslationContext } from '@/i18n/utils/translation-context'
 
 // Icons
 import { FileInput, FolderUp, Import, Plus } from 'lucide-react'

@@ -51,24 +51,6 @@ export const NODEMAILER_EMAIL = process.env.NODEMAILER_EMAIL
 export const NODEMAILER_PW = process.env.NODEMAILER_PW
 
 /**
- * I18N
- */
-export const LOCALES = [
-  { code: 'en', name: 'English' },
-  { code: 'de', name: 'Deutsch' },
-  { code: 'it', name: 'Italiano' },
-  { code: 'es', name: 'Español' },
-  { code: 'fr', name: 'Français' },
-  { code: 'ar', name: 'العربية' },
-  { code: 'pt-BR', name: 'Português (Brasil)' },
-  { code: 'tr', name: 'Türkçe' },
-  { code: 'ja', name: '日本語' },
-  { code: 'nb-NO', name: 'Norwegian (bokmål)' },
-  { code: 'nn-NO', name: 'Norwegian (nynorsk)' },
-]
-export const DEFAULT_LOCALE = LOCALES[0].code
-
-/**
  * Signature variables
  */
 export const SIGNATURE_COLORS: SignatureColor[] = [

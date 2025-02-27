@@ -13,7 +13,7 @@ import { InvoiceSchema } from '@/lib/schemas'
 
 // Context
 import { ThemeProvider } from '@/contexts/ThemeProvider'
-import { TranslationProvider } from '@/contexts/TranslationContext'
+import { TranslationProvider } from '@/i18n/utils/translation-context'
 import { InvoiceContextProvider } from '@/contexts/InvoiceContext'
 import { ChargesContextProvider } from '@/contexts/ChargesContext'
 

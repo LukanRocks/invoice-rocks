@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
-// Fonts
-import { alexBrush, dancingScript, greatVibes, outfit, parisienne } from '@/lib/fonts'
-
 // Favicon
 import Favicon from '@/public/favicon/favicon.ico'
 
@@ -17,7 +14,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { Toaster } from '@/components/ui/toaster'
 
 // Components
-import { BaseNavbar, BaseFooter } from '@/app/old-components'
+import { HtmlPage, NavBar, Footer } from '@/app/components'
 
 // Contexts
 import Providers from '@/contexts/Providers'
@@ -26,7 +23,10 @@ import Providers from '@/contexts/Providers'
 import { JSONLD, ROOTKEYWORDS } from '@/lib/seo'
 
 // Variables
-import { BASE_URL, GOOGLE_SC_VERIFICATION, LOCALES } from '@/lib/variables'
+import { BASE_URL, GOOGLE_SC_VERIFICATION } from '@/lib/variables'
+
+// i18n
+import { LOCALES_AVAILABLE, useTranslationContext } from '@/i18n'
 
 // TODO: Use a share metadata
 export const metadata: Metadata = {
@@ -52,33 +52,34 @@ export const metadata: Metadata = {
 }
 
 export function generateStaticParams() {
-  const locales = LOCALES.map((locale) => locale.code)
+  const locales = LOCALES_AVAILABLE.map((locale) => locale.code)
   return locales
 }
 
-export default async function LocaleLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string } }) {
+type LocaleProps = { children: React.ReactNode; params: { locale: string } }
+
+export default async ({ children, params: { locale } }: LocaleProps) => {
   let messages
+
   try {
-    messages = (await import(`@/i18n/${locale}.json`)).default
+    messages = (await import(`@/i18n/locales/${locale}.json`)).default
   } catch (error) {
     notFound()
   }
 
   return (
-    <html lang={locale}>
+    <HtmlPage language={locale}>
       <head>
         <script type='application/ld+json' id='json-ld' dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }} />
       </head>
-      <body
-        className={`${outfit.className} ${dancingScript.variable} ${parisienne.variable} ${greatVibes.variable} ${alexBrush.variable} antialiased bg-slate-100 dark:bg-slate-800`}
-      >
+      <body className='antialiased bg-slate-100 dark:bg-slate-800'>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
-            <BaseNavbar />
+            <NavBar />
 
             <div className='flex flex-col'>{children}</div>
 
-            <BaseFooter />
+            <Footer />
 
             {/* Toast component */}
             <Toaster />
@@ -88,6 +89,6 @@ export default async function LocaleLayout({ children, params: { locale } }: { c
           </Providers>
         </NextIntlClientProvider>
       </body>
-    </html>
+    </HtmlPage>
   )
 }
