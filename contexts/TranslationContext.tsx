@@ -1,32 +1,28 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext } from 'react'
 
 // Next Intl
-import { useTranslations } from "next-intl";
+import { useTranslations } from 'next-intl'
 
 const defaultTranslationContext = {
-    _t: (key: string) => "",
-};
+  _t: (key: string) => '',
+}
 
-export const TranslationContext = createContext(defaultTranslationContext);
+export const TranslationContext = createContext(defaultTranslationContext)
 
 export const useTranslation = () => {
-    return useContext(TranslationContext);
-};
+  return useContext(TranslationContext)
+}
 
 export const useTranslationContext = () => {
-    return useContext(TranslationContext);
-};
+  return useContext(TranslationContext)
+}
 
 type TranslationProviderProps = {
-    children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 export const TranslationProvider = ({ children }: TranslationProviderProps) => {
-    const _t = useTranslations();
+  const _t = useTranslations()
 
-    return (
-        <TranslationContext.Provider value={{ _t }}>
-            {children}
-        </TranslationContext.Provider>
-    );
-};
+  return <TranslationContext.Provider value={{ _t }}>{children}</TranslationContext.Provider>
+}
