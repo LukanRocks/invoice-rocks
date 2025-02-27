@@ -7,7 +7,7 @@ import { useFormContext } from 'react-hook-form'
 
 // ShadCn
 import { Button } from '@/old-stuff/ui/button'
-import { Calendar } from '@/old-stuff/ui/calendar'
+// import { Calendar } from '@/old-stuff/ui/calendar'
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/old-stuff/ui/form'
 import { Popover, PopoverContent, PopoverTrigger } from '@/old-stuff/ui/popover'
 
@@ -55,7 +55,7 @@ const DatePickerFormField = ({ name, label }: DatePickerFormFieldProps) => {
                     </FormControl>
                   </PopoverTrigger>
                   <PopoverContent className='w-auto p-0'>
-                    <Calendar
+                    {/* <Calendar
                       mode='single'
                       captionLayout='dropdown-buttons'
                       defaultMonth={field.value}
@@ -68,7 +68,7 @@ const DatePickerFormField = ({ name, label }: DatePickerFormFieldProps) => {
                       fromYear={1960}
                       toYear={new Date().getFullYear() + 30}
                       initialFocus
-                    />
+                    /> */}
                   </PopoverContent>
                 </Popover>
                 <FormMessage />

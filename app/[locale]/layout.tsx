@@ -16,7 +16,9 @@ import Providers from '@/old-stuff/contexts/Providers'
 
 type LocaleProps = { children: React.ReactNode; params: { locale: string } }
 
-export default async ({ children, params: { locale } }: LocaleProps) => {
+export default async ({ children, params }: LocaleProps) => {
+  const { locale } = await params
+
   let messages
 
   try {
