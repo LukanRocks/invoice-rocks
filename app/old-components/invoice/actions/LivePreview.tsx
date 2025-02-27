@@ -2,7 +2,7 @@
 import { DynamicInvoiceTemplate, Subheading } from '@/app/old-components'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 type LivePreviewProps = {
   data: InvoiceType

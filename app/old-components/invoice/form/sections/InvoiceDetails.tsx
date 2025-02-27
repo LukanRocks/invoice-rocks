@@ -4,7 +4,7 @@
 import { CurrencySelector, DatePickerFormField, FormInput, FormFile, Subheading, TemplateSelector } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useTranslationContext } from '@i18n'
 
 const InvoiceDetails = () => {
   const { _t } = useTranslationContext()

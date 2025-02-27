@@ -3,10 +3,10 @@ import React, { useMemo } from 'react'
 import dynamic from 'next/dynamic'
 
 // ShadCn
-import { Skeleton } from '@/components/ui/skeleton'
+import { Skeleton } from '@/old-stuff/ui/skeleton'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 const DynamicInvoiceTemplateSkeleton = () => {
   return <Skeleton className='min-h-[60rem]' />

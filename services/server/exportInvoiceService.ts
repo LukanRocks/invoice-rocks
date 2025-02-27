@@ -10,10 +10,10 @@ import { Builder } from 'xml2js'
 import XLSX from 'xlsx'
 
 // Helpers
-import { flattenObject } from '@/lib/helpers'
+import { flattenObject } from '@/old-stuff/old-lib/helpers'
 
 // Types
-import { ExportTypes } from '@/lib/types'
+import { ExportTypes } from '@/old-stuff/old-lib/types'
 
 /**
  * Export an invoice in selected format.

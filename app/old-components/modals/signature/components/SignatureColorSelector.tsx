@@ -5,7 +5,7 @@ import { BaseButton } from '@/app/old-components'
 import { Check } from 'lucide-react'
 
 // Types
-import { SignatureColor } from '@/lib/types'
+import { SignatureColor } from '@/old-stuff/old-lib/types'
 
 type SignatureColorSelectorProps = {
   colors: SignatureColor[]

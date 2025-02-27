@@ -6,25 +6,25 @@ import { useEffect, useState } from 'react'
 import { useFormContext, useWatch } from 'react-hook-form'
 
 // ShadCn
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Label } from '@/components/ui/label'
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/old-stuff/ui/dialog'
+import { Tabs, TabsList, TabsTrigger } from '@/old-stuff/ui/tabs'
+import { Label } from '@/old-stuff/ui/label'
 
 // Components
 import { DrawSignature, TypeSignature, UploadSignature } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
-import { useSignatureContext } from '@/contexts/SignatureContext'
+import { useTranslationContext } from '@i18n'
+import { useSignatureContext } from '@/old-stuff/contexts/SignatureContext'
 
 // Icons
 import { FileSignature } from 'lucide-react'
 
 // Helpers
-import { isDataUrl } from '@/lib/helpers'
+import { isDataUrl } from '@/old-stuff/old-lib/helpers'
 
 // Types
-import { SignatureTabs } from '@/lib/types'
+import { SignatureTabs } from '@/old-stuff/old-lib/types'
 
 type SignatureModalProps = {}
 

@@ -4,14 +4,14 @@
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/old-stuff/ui/form'
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/old-stuff/ui/select'
 
 // Hooks
-import useCurrencies from '@/hooks/useCurrencies'
+import useCurrencies from '@/old-stuff/hooks/useCurrencies'
 
 // Types
-import { CurrencyType, NameType } from '@/lib/types'
+import { CurrencyType, NameType } from '@/old-stuff/old-lib/types'
 
 type CurrencySelectorProps = {
   name: NameType

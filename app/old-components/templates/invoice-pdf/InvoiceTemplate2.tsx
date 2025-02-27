@@ -4,13 +4,13 @@ import React from 'react'
 import { InvoiceLayout } from '@/app/old-components'
 
 // Helpers
-import { formatNumberWithCommas, isDataUrl } from '@/lib/helpers'
+import { formatNumberWithCommas, isDataUrl } from '@/old-stuff/old-lib/helpers'
 
 // Variables
-import { DATE_OPTIONS } from '@/lib/variables'
+import { DATE_OPTIONS } from '@/old-stuff/old-lib/variables'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 const InvoiceTemplate2 = (data: InvoiceType) => {
   const { sender, receiver, details } = data

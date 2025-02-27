@@ -4,16 +4,16 @@
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { Form } from '@/components/ui/form'
+import { Form } from '@/old-stuff/ui/form'
 
 // Components
 import { InvoiceActions, InvoiceForm } from '@/app/old-components'
 
 // Context
-import { useInvoiceContext } from '@/contexts/InvoiceContext'
+import { useInvoiceContext } from '@/old-stuff/contexts/InvoiceContext'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 const InvoiceMain = () => {
   const { handleSubmit } = useFormContext<InvoiceType>()

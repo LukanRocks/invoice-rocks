@@ -1,8 +1,8 @@
 // Variables
-import { EXPORT_INVOICE_API } from '@/lib/variables'
+import { EXPORT_INVOICE_API } from '@/old-stuff/old-lib/variables'
 
 // Types
-import { ExportTypes, InvoiceType } from '@/lib/types'
+import { ExportTypes, InvoiceType } from '@/old-stuff/old-lib/types'
 
 /**
  * Export an invoice by sending a POST request to the server and initiating the download.

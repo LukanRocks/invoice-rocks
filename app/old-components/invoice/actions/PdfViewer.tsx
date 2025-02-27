@@ -10,10 +10,10 @@ import { useFormContext } from 'react-hook-form'
 import { FinalPdf, LivePreview } from '@/app/old-components'
 
 // Contexts
-import { useInvoiceContext } from '@/contexts/InvoiceContext'
+import { useInvoiceContext } from '@/old-stuff/contexts/InvoiceContext'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 const PdfViewer = () => {
   const { invoicePdf } = useInvoiceContext()

@@ -4,13 +4,13 @@ import { NextRequest, NextResponse } from 'next/server'
 import chromium from '@sparticuz/chromium'
 
 // Helpers
-import { getInvoiceTemplate } from '@/lib/helpers'
+import { getInvoiceTemplate } from '@/old-stuff/old-lib/helpers'
 
 // Variables
-import { CHROMIUM_EXECUTABLE_PATH, ENV, TAILWIND_CDN } from '@/lib/variables'
+import { CHROMIUM_EXECUTABLE_PATH, ENV, TAILWIND_CDN } from '@/old-stuff/old-lib/variables'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 /**
  * Generate a PDF document of an invoice based on the provided data.

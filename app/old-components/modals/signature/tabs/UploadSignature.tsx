@@ -1,18 +1,18 @@
 // ShadCn
-import { Card, CardContent } from '@/components/ui/card'
-import { TabsContent } from '@/components/ui/tabs'
+import { Card, CardContent } from '@/old-stuff/ui/card'
+import { TabsContent } from '@/old-stuff/ui/tabs'
 
 // Components
 import { BaseButton } from '@/app/old-components'
 
 // Contexts
-import { useSignatureContext } from '@/contexts/SignatureContext'
+import { useSignatureContext } from '@/old-stuff/contexts/SignatureContext'
 
 // Icons
 import { Check, Trash2 } from 'lucide-react'
 
 // Types
-import { SignatureTabs } from '@/lib/types'
+import { SignatureTabs } from '@/old-stuff/old-lib/types'
 
 type UploadSignatureProps = {
   handleSaveSignature: () => void

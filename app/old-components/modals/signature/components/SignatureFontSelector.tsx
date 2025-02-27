@@ -1,8 +1,8 @@
 // ShadCn
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/old-stuff/ui/select'
 
 // Types
-import { SignatureFont } from '@/lib/types'
+import { SignatureFont } from '@/old-stuff/old-lib/types'
 
 type SignatureFontSelectorProps = {
   typedSignatureFonts: SignatureFont[]

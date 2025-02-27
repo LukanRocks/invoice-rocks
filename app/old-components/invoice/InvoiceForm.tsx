@@ -6,8 +6,8 @@ import { useMemo } from 'react'
 import { useFormContext, useWatch } from 'react-hook-form'
 
 // ShadCn
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/old-stuff/ui/card'
+import { Badge } from '@/old-stuff/ui/badge'
 
 // React Wizard
 import { Wizard } from 'react-use-wizard'
@@ -16,7 +16,7 @@ import { Wizard } from 'react-use-wizard'
 import { WizardStep, BillFromSection, BillToSection, InvoiceDetails, Items, PaymentInformation, InvoiceSummary } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useTranslationContext } from '@i18n'
 
 const InvoiceForm = () => {
   const { _t } = useTranslationContext()

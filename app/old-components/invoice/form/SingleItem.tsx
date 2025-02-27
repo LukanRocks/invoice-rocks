@@ -10,20 +10,20 @@ import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 
 // ShadCn
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { Input } from '@/old-stuff/ui/input'
+import { Label } from '@/old-stuff/ui/label'
 
 // Components
 import { BaseButton, FormInput, FormTextarea } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useTranslationContext } from '@i18n'
 
 // Icons
 import { ChevronDown, ChevronUp, GripVertical, Trash2 } from 'lucide-react'
 
 // Types
-import { ItemType, NameType } from '@/lib/types'
+import { ItemType, NameType } from '@/old-stuff/old-lib/types'
 
 type SingleItemProps = {
   name: NameType

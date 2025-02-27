@@ -10,10 +10,10 @@ import { WizardValues } from 'react-use-wizard'
 import { BaseButton } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useTranslationContext } from '@i18n'
 
 // Types
-import { InvoiceType, WizardStepType } from '@/lib/types'
+import { InvoiceType, WizardStepType } from '@/old-stuff/old-lib/types'
 
 type WizardProgressProps = {
   wizard: WizardValues

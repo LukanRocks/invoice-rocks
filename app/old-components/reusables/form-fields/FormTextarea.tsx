@@ -4,8 +4,8 @@
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
-import { Textarea, TextareaProps } from '@/components/ui/textarea'
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/old-stuff/ui/form'
+import { Textarea, TextareaProps } from '@/old-stuff/ui/textarea'
 
 type FormTextareaProps = {
   name: string

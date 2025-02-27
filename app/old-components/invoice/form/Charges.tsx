@@ -4,21 +4,21 @@
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { Label } from '@/components/ui/label'
-import { Switch } from '@/components/ui/switch'
+import { Label } from '@/old-stuff/ui/label'
+import { Switch } from '@/old-stuff/ui/switch'
 
 // Components
 import { ChargeInput } from '@/app/old-components'
 
 // Contexts
-import { useChargesContext } from '@/contexts/ChargesContext'
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useChargesContext } from '@/old-stuff/contexts/ChargesContext'
+import { useTranslationContext } from '@i18n'
 
 // Helpers
-import { formatNumberWithCommas } from '@/lib/helpers'
+import { formatNumberWithCommas } from '@/old-stuff/old-lib/helpers'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 const Charges = () => {
   const {

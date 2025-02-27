@@ -4,29 +4,26 @@ import { notFound } from 'next/navigation'
 // Favicon
 import Favicon from '@/public/favicon/favicon.ico'
 
-// Vercel Analytics
-import { Analytics } from '@vercel/analytics/react'
-
 // Next Intl
 import { NextIntlClientProvider } from 'next-intl'
 
 // ShadCn
-import { Toaster } from '@/components/ui/toaster'
+import { Toaster } from '@/old-stuff/ui/toaster'
 
 // Components
-import { HtmlPage, NavBar, Footer } from '@/app/components'
+import { HtmlPage, NavBar, Footer } from '@components'
 
 // Contexts
-import Providers from '@/contexts/Providers'
+import Providers from '@/old-stuff/contexts/Providers'
 
 // SEO
-import { JSONLD, ROOTKEYWORDS } from '@/lib/seo'
+import { JSONLD, ROOTKEYWORDS } from '@/old-stuff/old-lib/seo'
 
 // Variables
-import { BASE_URL, GOOGLE_SC_VERIFICATION } from '@/lib/variables'
+import { BASE_URL, GOOGLE_SC_VERIFICATION } from '@/old-stuff/old-lib/variables'
 
 // i18n
-import { LOCALES_AVAILABLE, useTranslationContext } from '@/i18n'
+import { LOCALES_AVAILABLE } from '@i18n'
 
 // TODO: Use a share metadata
 export const metadata: Metadata = {
@@ -62,7 +59,7 @@ export default async ({ children, params: { locale } }: LocaleProps) => {
   let messages
 
   try {
-    messages = (await import(`@/i18n/locales/${locale}.json`)).default
+    messages = (await import(`@/lib/i18n/locales/${locale}.json`)).default
   } catch (error) {
     notFound()
   }
@@ -83,9 +80,6 @@ export default async ({ children, params: { locale } }: LocaleProps) => {
 
             {/* Toast component */}
             <Toaster />
-
-            {/* Vercel analytics */}
-            <Analytics />
           </Providers>
         </NextIntlClientProvider>
       </body>

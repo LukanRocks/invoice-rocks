@@ -6,8 +6,8 @@ import React from 'react'
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
+import { FormControl, FormField, FormItem, FormMessage } from '@/old-stuff/ui/form'
+import { Input } from '@/old-stuff/ui/input'
 
 // Components
 import { BaseButton } from '@/app/old-components'
@@ -16,7 +16,7 @@ import { BaseButton } from '@/app/old-components'
 import { Percent, RefreshCw } from 'lucide-react'
 
 // Types
-import { NameType } from '@/lib/types'
+import { NameType } from '@/old-stuff/old-lib/types'
 
 type ChargeInputProps = {
   label: string

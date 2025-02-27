@@ -1,14 +1,14 @@
 'use client'
 
 // ShadCn
-import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/old-stuff/ui/card'
 
 // Components
 import { PdfViewer, BaseButton, NewInvoiceAlert, InvoiceLoaderModal, InvoiceExportModal } from '@/app/old-components'
 
 // Contexts
-import { useInvoiceContext } from '@/contexts/InvoiceContext'
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useInvoiceContext } from '@/old-stuff/contexts/InvoiceContext'
+import { useTranslationContext } from '@i18n'
 
 // Icons
 import { FileInput, FolderUp, Import, Plus } from 'lucide-react'

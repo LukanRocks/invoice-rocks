@@ -3,14 +3,14 @@
 import { useState } from 'react'
 
 // ShadCn
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/old-stuff/ui/dialog'
 
 // Components
 import { SavedInvoicesList } from '@/app/old-components'
 import { ImportJsonButton } from '@/app/old-components'
 
 // Context
-import { useInvoiceContext } from '@/contexts/InvoiceContext'
+import { useInvoiceContext } from '@/old-stuff/contexts/InvoiceContext'
 
 type InvoiceLoaderModalType = {
   children: React.ReactNode

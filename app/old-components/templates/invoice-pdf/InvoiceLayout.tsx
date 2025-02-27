@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 type InvoiceLayoutProps = {
   data: InvoiceType

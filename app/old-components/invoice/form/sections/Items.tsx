@@ -13,13 +13,13 @@ import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { BaseButton, SingleItem, Subheading } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useTranslationContext } from '@i18n'
 
 // Icons
 import { Plus } from 'lucide-react'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 const Items = () => {
   const { control, setValue } = useFormContext<InvoiceType>()

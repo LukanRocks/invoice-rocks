@@ -12,10 +12,10 @@ import { render } from '@react-email/render'
 import { SendPdfEmail } from '@/app/old-components'
 
 // Helpers
-import { fileToBuffer } from '@/lib/helpers'
+import { fileToBuffer } from '@/old-stuff/old-lib/helpers'
 
 // Variables
-import { NODEMAILER_EMAIL, NODEMAILER_PW } from '@/lib/variables'
+import { NODEMAILER_EMAIL, NODEMAILER_PW } from '@/old-stuff/old-lib/variables'
 
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({

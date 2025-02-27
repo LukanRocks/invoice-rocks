@@ -4,8 +4,8 @@
 import { Charges, FormTextarea, SignatureModal, Subheading } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
-import { SignatureContextProvider } from '@/contexts/SignatureContext'
+import { useTranslationContext } from '@i18n'
+import { SignatureContextProvider } from '@/old-stuff/contexts/SignatureContext'
 
 const InvoiceSummary = () => {
   const { _t } = useTranslationContext()

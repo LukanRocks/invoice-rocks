@@ -3,15 +3,15 @@
 import React, { useState } from 'react'
 
 // ShadCn
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
-import { Label } from '@/components/ui/label'
-import { Input } from '@/components/ui/input'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/old-stuff/ui/dialog'
+import { Label } from '@/old-stuff/ui/label'
+import { Input } from '@/old-stuff/ui/input'
 
 // Components
 import { BaseButton } from '@/app/old-components'
 
 // Helpers
-import { isValidEmail } from '@/lib/helpers'
+import { isValidEmail } from '@/old-stuff/old-lib/helpers'
 
 type SendPdfToEmailModalProps = {
   sendPdfToMail: (email: string) => Promise<void>

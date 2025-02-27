@@ -7,7 +7,7 @@ import { useFieldArray, useFormContext } from 'react-hook-form'
 import { BaseButton, FormCustomInput, FormInput, Subheading } from '@/app/old-components'
 
 // Contexts
-import { useTranslationContext } from '@/i18n/utils/translation-context'
+import { useTranslationContext } from '@i18n'
 
 // Icons
 import { Plus } from 'lucide-react'

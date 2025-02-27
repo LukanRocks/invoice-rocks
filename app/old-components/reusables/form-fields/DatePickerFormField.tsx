@@ -6,22 +6,22 @@ import { useState } from 'react'
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { Button } from '@/components/ui/button'
-import { Calendar } from '@/components/ui/calendar'
-import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+import { Button } from '@/old-stuff/ui/button'
+import { Calendar } from '@/old-stuff/ui/calendar'
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/old-stuff/ui/form'
+import { Popover, PopoverContent, PopoverTrigger } from '@/old-stuff/ui/popover'
 
 // Utils
-import { cn } from '@/lib/utils'
+import { cn } from '@/old-stuff/old-lib/utils'
 
 // Variables
-import { DATE_OPTIONS } from '@/lib/variables'
+import { DATE_OPTIONS } from '@/old-stuff/old-lib/variables'
 
 // Icons
 import { CalendarIcon } from 'lucide-react'
 
 // Types
-import { NameType } from '@/lib/types'
+import { NameType } from '@/old-stuff/old-lib/types'
 
 type DatePickerFormFieldProps = {
   name: NameType

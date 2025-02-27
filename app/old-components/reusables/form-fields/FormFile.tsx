@@ -6,8 +6,8 @@ import { ChangeEvent, useRef, useState } from 'react'
 import { useFormContext, useWatch } from 'react-hook-form'
 
 // ShadCn components
-import { FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form'
-import { Label } from '@/components/ui/label'
+import { FormControl, FormField, FormItem, FormMessage } from '@/old-stuff/ui/form'
+import { Label } from '@/old-stuff/ui/label'
 
 // Components
 import { BaseButton } from '@/app/old-components'
@@ -16,7 +16,7 @@ import { BaseButton } from '@/app/old-components'
 import { ImageMinus, Image } from 'lucide-react'
 
 // Types
-import { NameType } from '@/lib/types'
+import { NameType } from '@/old-stuff/old-lib/types'
 
 type FormFileProps = {
   name: NameType

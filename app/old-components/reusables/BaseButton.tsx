@@ -3,8 +3,8 @@
 import React from 'react'
 
 // ShadCn
-import { Button, ButtonProps } from '@/components/ui/button'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { Button, ButtonProps } from '@/old-stuff/ui/button'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/old-stuff/ui/tooltip'
 
 // Icons
 import { Loader2 } from 'lucide-react'

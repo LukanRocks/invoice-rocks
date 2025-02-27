@@ -1,13 +1,13 @@
 'use client'
 
 // ShadCn
-import { AspectRatio } from '@/components/ui/aspect-ratio'
+import { AspectRatio } from '@/old-stuff/ui/aspect-ratio'
 
 // Components
 import { BaseButton, SendPdfToEmailModal, Subheading } from '@/app/old-components'
 
 // Contexts
-import { useInvoiceContext } from '@/contexts/InvoiceContext'
+import { useInvoiceContext } from '@/old-stuff/contexts/InvoiceContext'
 
 // Icons
 import { BookmarkIcon, DownloadCloudIcon, Eye, Mail, MoveLeft, Printer } from 'lucide-react'

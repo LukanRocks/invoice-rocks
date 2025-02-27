@@ -6,8 +6,8 @@ import Image from 'next/image'
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card'
-import { Label } from '@/components/ui/label'
+import { Card, CardContent, CardDescription, CardHeader } from '@/old-stuff/ui/card'
+import { Label } from '@/old-stuff/ui/label'
 
 // Components
 import { BaseButton, InvoiceTemplate1, InvoiceTemplate2 } from '@/app/old-components'
@@ -19,7 +19,7 @@ import template1 from '@/public/img/invoice-1-example.png'
 import { Check } from 'lucide-react'
 
 // Types
-import { InvoiceType } from '@/lib/types'
+import { InvoiceType } from '@/old-stuff/old-lib/types'
 
 const TemplateSelector = () => {
   const { watch, setValue } = useFormContext<InvoiceType>()

@@ -4,8 +4,8 @@
 import { useFormContext } from 'react-hook-form'
 
 // ShadCn
-import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
-import { Input, InputProps } from '@/components/ui/input'
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/old-stuff/ui/form'
+import { Input, InputProps } from '@/old-stuff/ui/input'
 
 type FormInputProps = {
   name: string
