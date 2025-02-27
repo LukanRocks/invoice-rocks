@@ -1,5 +1,5 @@
 // Components
-import { InvoiceMain } from '@/app/components'
+import { InvoiceMain } from '@/app/old-components'
 
 export default function Home() {
   return (

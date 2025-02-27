@@ -1,5 +1,6 @@
 {
     "files.exclude": {
+        "**/.vscode": true,
         "**/.cache": true,
         "**/.github": true,
         "**/.next": true,

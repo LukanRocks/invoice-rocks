@@ -9,7 +9,7 @@ import type { SendMailOptions } from 'nodemailer'
 import { render } from '@react-email/render'
 
 // Components
-import { SendPdfEmail } from '@/app/components'
+import { SendPdfEmail } from '@/app/old-components'
 
 // Helpers
 import { fileToBuffer } from '@/lib/helpers'
