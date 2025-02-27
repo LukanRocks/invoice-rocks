@@ -23,6 +23,10 @@ export const getAllLocalesNames = () => {
   return LOCALES_AVAILABLE.map((language) => language.name)
 }
 
+export const getAllLocalesCodes = () => {
+  return LOCALES_AVAILABLE.map((language) => language.code)
+}
+
 export const getAllLocalesEmojis = () => {
   return LOCALES_AVAILABLE.map((language) => language.emoji)
 }

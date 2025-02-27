@@ -1,3 +1,6 @@
+// React
+import { useState, useEffect } from 'react'
+
 // Next
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
@@ -17,6 +20,11 @@ import Providers from '@/old-stuff/contexts/Providers'
 type LocaleProps = { children: React.ReactNode; params: { locale: string } }
 
 export default async ({ children, params }: LocaleProps) => {
+  // const [locale, setLocale] = useState('')
+  // useEffect(()=>{
+
+  // },[])
+
   const { locale } = await params
 
   let messages
@@ -27,24 +35,21 @@ export default async ({ children, params }: LocaleProps) => {
     notFound()
   }
 
+  // TODO: Learn about JSON-LD and why it's used, and where to put it
+  // <head><script type='application/ld+json' id='json-ld' dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }} /></head>
   return (
-    <HtmlPage language={locale}>
-      {/* TODO: Learn about JSON-LD and why it's used */}
-      {/* <head><script type='application/ld+json' id='json-ld' dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }} /></head> */}
-      <body className='antialiased bg-slate-100 dark:bg-slate-800'>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Providers>
-            <NavBar />
+    <div className='antialiased bg-slate-100 dark:bg-slate-800'>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <Providers>
+          <NavBar />
 
-            <div className='flex flex-col'>{children}</div>
+          <div className='flex flex-col'>{children}</div>
 
-            <Footer />
+          <Footer />
 
-            {/* Toast component */}
-            <Toaster />
-          </Providers>
-        </NextIntlClientProvider>
-      </body>
-    </HtmlPage>
+          <Toaster />
+        </Providers>
+      </NextIntlClientProvider>
+    </div>
   )
 }

@@ -5,21 +5,20 @@ import '@mantine/dates/styles.css'
 import '@mantine/notifications/styles.css'
 
 // Mantine
-import { ColorSchemeScript, MantineProvider } from '@mantine/core'
+import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core'
 
 // Lib
 import { theme } from '@theme'
-import { HtmlPage } from '@seo'
 
 // Since we have a `not-found.tsx` page on the root,
 // a layout file is required, even if it's just passing children through.
 export default ({ children }: { children: React.ReactNode }) => (
-  <HtmlPage>
+  <html {...mantineHtmlProps}>
     <head>
       <ColorSchemeScript defaultColorScheme='auto' />
     </head>
     <body>
       <MantineProvider theme={theme}>{children}</MantineProvider>
     </body>
-  </HtmlPage>
+  </html>
 )

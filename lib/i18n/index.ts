@@ -8,7 +8,7 @@ import { LanguageSelector } from './components/language-selector'
    ========================= */
 import { LOCALES_AVAILABLE, DEFAULT_LOCALE } from './utils/variables'
 import { TranslationContext, useTranslation, useTranslationContext, TranslationProvider } from './utils/translation-context'
-import { getLocaleNameByCode, getLocaleCodeByName, validateLocaleCode, getAllLocalesNames, getAllLocalesEmojis } from './utils/helpers'
+import { getLocaleNameByCode, getLocaleCodeByName, validateLocaleCode, getAllLocalesNames, getAllLocalesCodes, getAllLocalesEmojis } from './utils/helpers'
 
 export {
   LanguageSelector,
@@ -22,5 +22,6 @@ export {
   getLocaleCodeByName,
   validateLocaleCode,
   getAllLocalesNames,
+  getAllLocalesCodes,
   getAllLocalesEmojis,
 }
