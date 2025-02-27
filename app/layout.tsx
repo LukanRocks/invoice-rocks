@@ -10,8 +10,8 @@ import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/c
 // Lib
 import { theme } from '@theme'
 
-// Since we have a `not-found.tsx` page on the root,
-// a layout file is required, even if it's just passing children through.
+// TODO: Learn about JSON-LD and why it's used, and where to put it
+// <head><script type='application/ld+json' id='json-ld' dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }} /></head>
 export default ({ children }: { children: React.ReactNode }) => (
   <html {...mantineHtmlProps}>
     <head>
